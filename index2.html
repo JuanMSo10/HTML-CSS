@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style> table, th, td {
+        border: 1px solid blue;
+        border-radius: 10px;
+
+    }
+    /* th,td{
+        background-color: aqua;
+        padding: 10px;
+    }
+    table{
+        border-spacing: 10px;
+    }
+    td:nth-child(even){
+        background-color: yellow;
+    }
+    td:nth-child(odd){
+        background-color: violet;
+    } */
+    </style>
+</head>
+<body>
+    <table border="1" style="width:100%;"> 
+        <colgroup>
+            <col span="2" style="background-color: bisque;">
+        </colgroup>
+        <tr style="height: 40px;">
+            <th style="width:45%;"> Nombre</th>
+            <th style="width:45%;"> Apellido</th>
+            <th style="width:10%;"> Nota</th>
+        </tr>
+        <tr>
+            <td >Juan</td>
+            <td >Soria</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td >Enzo</td>
+            <td >Soria</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td >Rosmy</td>
+            <td >Soria</td>
+            <td>1</td>
+        </tr>
+        <caption>Nota de los alumnos</caption>
+    </table>
+
+    <!-- Listas -->
+    <!-- Lista desordenada -->
+    <p>Redes</p>
+    <ul style="list-style-type: circle;">
+        <li>X</li>
+        <li>Instagram
+            <ul>
+                <li>Canal 1</li>
+                <li>Canal 2</li>
+            </ul>
+
+        </li>
+        <li>Facebook</li>
+        <li>Cheat</li>
+    </ul>
+    <!-- Lista ordenada -->
+    <p>Equipos</p>
+    <ol type="A">
+        <li>River</li>
+        <li>Barcelona
+            <ol type="I">
+                <li>Messi</li>
+                <li>Ronaldhino</li>
+            </ol>
+
+        </li>
+        <li>Real Madrid</li>
+        <li>Liverpool</li>
+    </ol>
+    <!-- Lista de descripcion -->
+    <p>Equipos</p>
+    <dl>
+        <dt>River</dt>
+        <dd>Mas grande de la historia</dd>
+        <dt>Barcelona</dt>
+        <dd>Pecho frio</dd>
+        <dt>Real Madrid</dt>
+        <dd>Grande</dd>
+    </dl>
+    <!-- Videos -->
+    <h1>Video</h1>
+    <video width="540" height="360" controls autoplay muted>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <!-- Audio -->
+    <h1>Audio</h1>
+    <audio controls autoplay muted>
+        <source src="Audio.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
