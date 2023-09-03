@@ -1,0 +1,60 @@
+/* /* h1{
+    color: tomato;
+    border-style: solid;
+    border-color: black;
+}
+
+p{
+    color: aqua;
+} 
+
+#titulo{
+    color: black;
+    font-size: 50px;
+}
+
+.rojo{
+    color: red;
+}
+
+.borde{
+    border-style: solid;
+    border-color: chartreuse;
+}
+
+p.borde{
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+}
+
+h1.borde{
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+}
+
+* {
+    color: green;
+
+} */
+
+h1{
+    color: blue;
+    border-style: solid;
+    border-width: 10px;
+    border-color: red
+    
+}
+
+p{
+    color: black;
+    border-style: solid;
+    border-width: 20px;
+    border-color: red
+    
+}
+
+body{
+    background-color: rgb(154, 240, 211);
+}
