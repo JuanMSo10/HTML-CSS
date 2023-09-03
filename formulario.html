@@ -6,21 +6,25 @@
     <title>Formularios</title>
   </head>
   <body>
-    <form>
+    <form method="post" autocomplete="on">
       <!-- Text -->
-      <label for="nombre">Nombre:</label><br />
-      <input type="text" id="nombre" name="nombre" /> <br />
+      <label for="nombre">Nombre*:</label><br />
+      <input type="text" id="nombre" name="nombre" size="10" placeholder="Introduce tu Nombre" autofocus required/> <br />
 
-      <label for="apellido">Apellido:</label><br />
-      <input type="text" id="apellido" name="apellido" /> <br />
+      <label for="apellido">Apellido* :</label><br />
+      <input type="text" id="apellido" name="apellido"  placeholder="Introduce tu Apellido" required/> <br />
 
       <!-- Pasword -->
-      <label for="contrraseña">Contraseña:</label><br />
-      <input type="password" id="contrraseña" name="contrraseña" /> <br />
+      <label for="contrraseña">Contraseña* :</label><br />
+      <input type="password" id="contrraseña" name="contrraseña" placeholder="Contraseña" required maxlength="10" minlength="6"/> <br />
 
       <!-- Email -->
-      <label for="correo">Email:</label><br />
-      <input type="email" id="correo" name="correo" /> <br />
+      <label for="correo">Email* :</label><br />
+      <input type="email" id="correo" name="correo" size="30" placeholder="exemple@example.com" required/> <br />
+      
+      <!-- Rol-->
+      <label for="rol">Rol:</label><br />
+      <input type="text" id="rol" name="rol" value="Estudiante" readonly/> <br />
 
       <!-- Hidden -->
       <input type="hidden" id="estudiante" name="estudiante" value="1" />
@@ -66,7 +70,7 @@
 
       <!-- Numero-->
       <label for="edad">Introduce tu edad:</label>
-      <input type="number" id="edad" name="edad" step="any" /> <br />
+      <input type="number" id="edad" name="edad" step="1" min="0" max="99"/> <br />
 
       <!-- Range-->
       <label for="valoracion">Valoracion:</label>
@@ -74,7 +78,7 @@
 
       <!-- File-->
       <label for="archivo">Seleciona Foto:</label>
-      <input type="file" id="archivo" name="archivo" /> <br />
+      <input type="file" id="archivo" name="archivo" multiple/> <br />
 
       <!-- Botones -->
       <label>Botones:</label> <br />
