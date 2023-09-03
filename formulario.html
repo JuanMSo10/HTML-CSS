@@ -1,18 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularios</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-       <label for="nombre">Nombre:</label><br>
-       <input type="text" id="nombre" name="nombre"> <br>
-       
-       <label for="apellido">Apellido:</label><br>
-       <input type="text" id="apellido" name="apellido"> <br>
-       <input type="submit" value="enviar">
+      <!-- Text -->
+      <label for="nombre">Nombre:</label><br />
+      <input type="text" id="nombre" name="nombre" /> <br />
+
+      <label for="apellido">Apellido:</label><br />
+      <input type="text" id="apellido" name="apellido" /> <br />
+
+      <!-- Pasword -->
+      <label for="contrraseña">Contraseña:</label><br />
+      <input type="password" id="contrraseña" name="contrraseña" /> <br />
+
+      <!-- Email -->
+      <label for="correo">Email:</label><br />
+      <input type="email" id="correo" name="correo" /> <br />
+
+      <!-- Hidden -->
+      <input type="hidden" id="estudiante" name="estudiante" value="1" />
+
+      <!-- Radiobutton -->
+      <label>Lenguaje De programacion:</label> <br />
+      <input type="radio" id="html" name="favorito" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="favorito" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input type="radio" id="javascript" name="favorito" value="JAVASCRIPT" />
+      <label for="javascript">HTML</label><br />
+
+      <!-- CHECHBOX -->
+      <label>Lenguaje De programacion:</label> <br />
+      <input type="checkbox" id="html" name="favorito" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="checkbox" id="css" name="favorito" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="checkbox"
+        id="javascript"
+        name="favorito"
+        value="JAVASCRIPT"
+      />
+      <label for="javascript">HTML</label><br />
+
+      <!-- COLOR -->
+      <label for="color">Seleciona un color:</label>
+      <input type="color" id="color" name="color" /> <br />
+
+      <!-- Date -->
+      <label for="nacimiento">Seleciona fecha de nacimiento:</label>
+      <input type="date" id="nacimiento" name="nacimiento" /> <br />
+
+      <!-- Date Time-->
+      <label for="nacimiento2">Seleciona fecha y hora de nacimiento:</label>
+      <input type="datetime-local" id="nacimiento2" name="nacimiento2" /> <br />
+
+      <!-- Time-->
+      <label for="hora">Seleciona Hora:</label>
+      <input type="time" id="hora" name="hora" /> <br />
+
+      <!-- Numero-->
+      <label for="edad">Introduce tu edad:</label>
+      <input type="number" id="edad" name="edad" step="any" /> <br />
+
+      <!-- Range-->
+      <label for="valoracion">Valoracion:</label>
+      <input type="range" id="valoracion" name="valoracion" /> <br />
+
+      <!-- File-->
+      <label for="archivo">Seleciona Foto:</label>
+      <input type="file" id="archivo" name="archivo" /> <br />
+
+      <!-- Botones -->
+      <label>Botones:</label> <br />
+      <input
+        type="button"
+        onclick="alert('Mensaje de Alerta')"
+        value="Alerta"
+      />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Reiniciar" /><br />
+
+      <!-- Combobox -->
+      <label>Languaje de Programacion:</label><br />
+      <select name="lenguaje2" id="lenguaje2" size="3" multiple>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option></select
+      ><br />
+
+      <!-- Datalist -->
+      <input type="lenguaje3" name="lenguaje3" />
+      <datalist>
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="JavaScript"></option>
+        <option value="Java"></option>
+        <option value="Python"></option>
+      </datalist>
+
+      <br />
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Datos del Usuario:</legend>
+        <!-- Text -->
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" /> <br />
+
+        <label for="apellido">Apellido:</label><br />
+        <input type="text" id="apellido" name="apellido" /> <br />
+
+        <!-- Pasword -->
+        <label for="contrraseña">Contraseña:</label><br />
+        <input type="password" id="contrraseña" name="contrraseña" /> <br />
+      </fieldset> <br>
     </form>
-</body>
+  </body>
 </html>
